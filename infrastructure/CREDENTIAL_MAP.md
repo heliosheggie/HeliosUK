@@ -22,3 +22,15 @@
 - **Source:** GitHub
 - **Destination:** Netlify
 - **Trigger:** Push to `main` branch
+
+## 5. Deployment Environment Variables (Operational)
+The following variables must be present in the deployment environment or `.env` files for Agent execution:
+
+### Netlify Deployment
+- `NETLIFY_AUTH_TOKEN`: Required for Netlify CLI authentication.
+- `NETLIFY_SITE_ID`: The unique ID for the `helios-uk` site.
+
+### GitHub Actions / CI
+- `GITHUB_TOKEN`: Automatically provided by GitHub Actions context.
+- `DEPLOY_TOKEN`: Used for programmatic access to the repo.
+
