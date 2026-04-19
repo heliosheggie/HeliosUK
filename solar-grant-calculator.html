@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solar & Grant Calculator - Helios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-text">HELIOS</div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#roadmap">Roadmap</a></li>
+                <li><a href="index.html#mailing">Updates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <img src="Assets/Icons/calculator.svg" class="hero-icon" alt="Grant Calculator Icon">
+    <h1>Solar & Grant Calculator</h1>
+    <p>Clear, unbiased financial modelling for your system.</p>
+</section>
+
+<div class="container breadcrumb">
+    <a href="index.html">Home</a> → Solar & Grant Calculator
+</div>
+
+<section class="content container">
+    <h2>Inputs</h2>
+    <ul>
+        <li>Roof suitability</li>
+        <li>Panel count & wattage</li>
+        <li>Inverter size</li>
+        <li>Battery size</li>
+        <li>Orientation & pitch</li>
+        <li>Local irradiance</li>
+        <li>Annual electricity usage</li>
+    </ul>
+
+    <h2>Outputs</h2>
+    <ul>
+        <li>System cost estimate</li>
+        <li>Annual savings</li>
+        <li>Payback period</li>
+        <li>ROI %</li>
+        <li>Carbon savings</li>
+        <li>Grant eligibility</li>
+    </ul>
+
+    <h2>Grants Included</h2>
+    <ul>
+        <li>ECO4</li>
+        <li>Home Energy Scotland</li>
+        <li>Boiler Upgrade Scheme</li>
+        <li>0% VAT rules</li>
+    </ul>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Helios Heggie Platforms</p>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

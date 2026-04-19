@@ -3,97 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Helios - Your transparent, validated energy intelligence for UK homeowners. Solar panels, batteries, EV chargers with expert advice.">
+    <meta name="description" content="Helios - Transparent, validated energy intelligence for UK homeowners. Solar, battery, EV insights with no sales agenda.">
     <meta name="keywords" content="solar energy, battery storage, electric vehicle, solar panels, energy saving, UK homeowners">
     <meta name="author" content="Helios Heggie">
     <title>Helios Platform - Your Transparent Energy Intelligence</title>
-    
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
+            background: #ffffff;
         }
-        
+
         /* HEADER */
         header {
-            background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
-            color: #ffffff;
-            padding: 20px 0;
+            background: #000;
+            color: #fff;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
         }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
             color: #facc15;
-            text-decoration: none;
+            text-transform: uppercase;
         }
-        
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-        
+
+        .nav-links { display: flex; gap: 30px; list-style: none; }
         .nav-links a {
-            color: #ffffff;
+            color: #fff;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
-        
-        .nav-links a:hover {
-            color: #facc15;
-        }
-        
-        /* HERO SECTION */
+        .nav-links a:hover { color: #facc15; }
+
+        /* HERO */
         .hero {
-            background: linear-gradient(135deg, #000000 0%, #0d0d0d 50%, #000000 100%);
-            color: #ffffff;
-            padding: 100px 0;
+            background: linear-gradient(135deg, #000 0%, #0d0d0d 50%, #000 100%);
+            color: #fff;
+            padding: 100px 0 90px;
             text-align: center;
         }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+        .hero-logo {
+            max-width: 180px;
+            margin: 0 auto 25px;
+            display: block;
         }
-        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+        }
+        .hero-tagline {
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            color: #facc15;
+            text-shadow: 0 0 8px rgba(250,204,21,0.8);
+            animation: glowPulse 2.5s ease-in-out infinite;
+        }
+        @keyframes glowPulse {
+            0% { text-shadow: 0 0 6px rgba(250,204,21,0.6); }
+            50% { text-shadow: 0 0 18px rgba(250,204,21,1); }
+            100% { text-shadow: 0 0 6px rgba(250,204,21,0.6); }
+        }
         .hero p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
             color: #e0e0e0;
         }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
+
+        .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
         .btn {
             padding: 15px 40px;
             border-radius: 50px;
@@ -102,298 +90,357 @@
             font-size: 1.1rem;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        
-        .btn-primary {
-            background: #facc15;
-            color: #000000;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(250, 204, 21, 0.4);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: #ffffff;
-            border: 2px solid #ffffff;
-        }
-        
-        .btn-secondary:hover {
-            background: #ffffff;
-            color: #000000;
-        }
-        
+        .btn-primary { background: #facc15; color: #000; }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(250,204,21,0.4); }
+        .btn-secondary { background: transparent; color: #fff; border: 2px solid #fff; }
+        .btn-secondary:hover { background: #fff; color: #000; }
+
         /* FEATURES */
-        .features {
-            background: #ffffff;
-            padding: 80px 0;
-        }
-        
-        .features h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #000000;
-        }
-        
+        .features { background: #fff; padding: 80px 0; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
-        
         .feature-card {
-            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
-            padding: 40px;
+            background: #f5f5f5;
+            padding: 30px;
             border-radius: 15px;
             transition: transform 0.3s;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
+        .feature-card:hover { transform: translateY(-10px); }
+        .feature-card h3 { font-size: 1.4rem; margin-bottom: 10px; }
+        .feature-card p { font-size: 0.95rem; margin-bottom: 10px; }
+        .feature-card a {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.95rem;
+            color: #000;
+            font-weight: 600;
+            text-decoration: none;
         }
-        
-        .feature-card h3 {
-            color: #000000;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        
-        /* ABOUT SECTION */
-        .about {
-            background: #f0f0f0;
-            padding: 80px 0;
-        }
-        
-        .about h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: #000000;
-        }
-        
+        .feature-card a:hover { text-decoration: underline; }
+
+        /* ABOUT */
+        .about { background: #f0f0f0; padding: 80px 0; }
+        .about h2 { text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             align-items: center;
         }
-        
         .about-image {
-            background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
+            background: #000;
             height: 400px;
             border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ffffff;
+            color: #fff;
         }
-        
-        /* GET STARTED */
-        .get-started {
-            background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+
+        /* MAILING LIST */
+        .mailing {
+            background: #000;
+            color: #fff;
             padding: 80px 0;
             text-align: center;
         }
-        
-        .get-started h2 {
-            color: #000000;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
+        .mailing form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #111;
+            padding: 30px;
+            border-radius: 15px;
         }
-        
+        .mailing input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: none;
+        }
+        .mailing button {
+            background: #facc15;
+            color: #000;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* ROADMAP */
+        .roadmap {
+            background: #facc15;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .roadmap h2 { font-size: 2.5rem; margin-bottom: 30px; }
+
         /* FOOTER */
         footer {
-            background: #000000;
-            color: #ffffff;
+            background: #000;
+            color: #fff;
             padding: 40px 0;
             text-align: center;
         }
-        
-        .social-links {
-            margin-bottom: 20px;
-        }
-        
-        .social-links a {
-            color: #ffffff;
+        .social-icons img {
+            height: 32px;
             margin: 0 10px;
-            text-decoration: none;
+            filter: invert(100%);
+            transition: opacity 0.3s;
         }
-        
+        .social-icons img:hover { opacity: 0.6; }
+
+        /* LEGAL */
+        .legal-section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .legal-section h2 { margin-bottom: 20px; }
+
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-links {
-                flex-direction: column;
-                gap: 15px;
-            }
+            .hero h1 { font-size: 2rem; }
+            .hero-tagline { font-size: 1.3rem; }
+            .hero p { font-size: 1.05rem; }
+            .about-content { grid-template-columns: 1fr; }
+            .nav-links { flex-direction: column; gap: 15px; }
         }
     </style>
 </head>
-<body>
-    <!-- HEADER & NAVIGATION -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">HELIOS</a>
-                <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#get-started">Get Started</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="container">
-            <h1>Your Transparent Energy Intelligence</h1>
-            <p>Expert advice on solar panels, batteries, EV chargers with unbiased, insights.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Start Your Energy Assessment</a>
-                <a href="#features" class="btn btn-secondary">View Features</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FEATURES SECTION -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2>Why Choose Helios?</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>📊 Solar Intelligence</h3>
-                    <p>Analysis of your home's solar potential with accurate forecasts and detailed generation estimates.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💰 Grant Calculator</h3>
-                    <p>Comprehensive calculations for UK government grants including ECO4, Home Energy Scotland, and more.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>⚡ Tariff Optimizer</h3>
-                    <p>Expert comparison of energy tariffs with savings estimates and smart battery recommendations.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🏠 Complete System Guide</h3>
-                    <p>From installation to maintenance - a step-by-step roadmap to maximizing your energy savings.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Helios Platform</h2>
-            <div class="about-content">
-                <div>
-                    <h3>Who We Are</h3>
-                    <p>Built by Helios Heggie with the mission to provide trustworthy, unbiased energy intelligence for UK homeowners.</p>
-                    <br>
-                    <p><strong>Our Core Principles:</strong></p>
-                    <ul style="margin-left: 20px; margin-top: 15px;">
-                        <li>Unbiased intelligence only - no selling, no commissions</li>
-                        <li>Truth over convenience - always investigate first</li>
-                        <li>Expertise in solar, battery, and EV energy systems</li>
-                        <li>Transparency and education for homeowners</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <!-- Placeholder for image - remove for empty -->
-                    <div style="text-align: center;">
-                        <h3 style="font-size: 3rem;">🏠</h3>
-                        <p>Home Energy</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- GET STARTED SECTION -->
-    <section class="get-started" id="get-started">
-        <div class="container">
-            <h2>Get Started Today</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 30px;">Your energy audit is just a few clicks away</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Book Free Energy Assessment</a>
-                <a href="#features" class="btn btn-secondary">Explore Helios</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FOOTER -->
-<footer id="contact" style="padding: 40px 0; background: #0a0a0a; color: #ffffff;">
-    <div class="container" style="text-align: center;">
 
-        <h3 style="margin-bottom: 5px;">Helios Platform</h3>
-        <p style="margin-top: 0; opacity: 0.85;">
-            Empowering UK homeowners with clear, data‑driven energy intelligence
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-text">HELIOS</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#mailing">Updates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <img src="Assets/HeliosLogo.png" alt="Helios Logo" class="hero-logo">
+        <h1 class="hero-tagline">Your Transparent Energy Intelligence</h1>
+        <p>Unbiased insights for solar, battery storage, EV charging and home energy optimisation.</p>
+        <div class="hero-buttons">
+            <a href="#mailing" class="btn btn-primary">Join the Mailing List</a>
+            <a href="#features" class="btn btn-secondary">Explore the Platform</a>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <div class="container">
+        <h2>Core Helios Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>📊 Solar Intelligence Engine</h3>
+                <p>Trusted, personalised solar potential for your exact property using weather, irradiance and seasonal data.</p>
+                <p>Outputs: kWh/m²/day, annual generation, best months for solar at your location.</p>
+                <a href="solar-intelligence.html">Learn more →</a>
+            </div>
+            <div class="feature-card">
+                <h3>🏠 Roof & Panel Designer</h3>
+                <p>See your roof, draw shapes, and test panel layouts with real‑world generation estimates.</p>
+                <p>Outputs: max panel count, total kW, annual kWh, cost vs ROI.</p>
+                <a href="roof-designer.html">Design your roof →</a>
+            </div>
+            <div class="feature-card">
+                <h3>💷 Solar & Grant Calculator</h3>
+                <p>Clear, unbiased financial picture including system cost, savings, payback and grant eligibility.</p>
+                <p>Includes ECO4, Home Energy Scotland, BUS and VAT rules.</p>
+                <a href="solar-grant-calculator.html">Run the numbers →</a>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Tariff & Supplier Optimiser</h3>
+                <p>Find the best tariff for your system, including Octopus Agile, Go, Cosy, EV tariffs and more.</p>
+                <p>Shows savings, cheap windows and battery charging opportunities.</p>
+                <a href="tariff-optimiser.html">Compare tariffs →</a>
+            </div>
+            <div class="feature-card">
+                <h3>🔄 Full Ecosystem Savings Simulator</h3>
+                <p>Model solar + battery + EV + tariff together for a complete picture of bills and savings.</p>
+                <p>Outputs: import/export, self‑consumption, savings, payback and best configuration.</p>
+                <a href="ecosystem-simulator.html">Simulate your system →</a>
+            </div>
+            <div class="feature-card">
+                <h3>💛 Support Layer</h3>
+                <p>Keep Helios free with optional support: donations, referrals and future vetted partnerships.</p>
+                <p>Includes Octopus referral integration and future support options.</p>
+                <a href="support.html">Support Helios →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="container">
+        <h2>About Helios</h2>
+        <div class="about-content">
+            <div>
+                <h3>Our Mission</h3>
+                <p>Helios exists to give UK homeowners truth‑first, sales‑free, data‑driven energy intelligence. No installers. No commissions. No bias.</p>
+                <br>
+                <p><strong>We stand for:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li>Transparency over marketing</li>
+                    <li>Evidence over assumptions</li>
+                    <li>Education over pressure</li>
+                    <li>Empowering homeowners with real clarity</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div style="text-align: center;">
+                    <h3 style="font-size: 3rem;">☀️</h3>
+                    <p>Energy Intelligence</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAILING LIST -->
+<section class="mailing" id="mailing">
+    <div class="container">
+        <h2>Join the Helios Mailing List</h2>
+        <p>Get updates on new features, weekly solar insights, and UK energy intelligence.</p>
+
+        <form action="https://formsubmit.co/heliosheggie@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Helios Mailing List Signup">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="text" name="name" placeholder="Name (optional)">
+            <input type="email" name="email" placeholder="Email (required)" required>
+            <input type="text" name="postcode" placeholder="Postcode (optional)">
+            <input type="text" name="phone" placeholder="Phone (optional)">
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="roadmap" id="roadmap">
+    <div class="container">
+        <h2>Helios Roadmap</h2>
+        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
+            We're building the UK's most transparent home‑energy intelligence platform.  
+            Here's what's coming next:
         </p>
 
-        <div class="social-links" style="margin: 20px 0;">
-            <a href="#" style="margin: 0 10px; color: #4db8ff; text-decoration: none;">Email Us</a>
-            <a href="#" style="margin: 0 10px; color: #4db8ff; text-decoration: none;">Twitter</a>
-            <a href="#" style="margin: 0 10px; color: #4db8ff; text-decoration: none;">LinkedIn</a>
-            <a href="#" style="margin: 0 10px; color: #4db8ff; text-decoration: none;">Facebook</a>
+        <div class="feature-grid" style="margin-top: 40px;">
+            <div class="feature-card">
+                <h3>🔍 AI‑Driven Home Scan</h3>
+                <p>Upload your address and get instant solar/battery suitability scoring.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📦 System Builder</h3>
+                <p>Design your ideal solar + battery setup with real‑world pricing.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📈 Savings Engine</h3>
+                <p>Model your 20‑year savings with tariff switching and battery optimisation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="container">
+        <h3>Helios Platform</h3>
+        <p>Empowering UK homeowners with clear, data‑driven energy intelligence.</p>
+
+        <div class="social-icons" style="margin: 20px 0;">
+            <a href="mailto:heliosheggie@gmail.com">
+                <img src="Assets/email.png" alt="Email">
+            </a>
+            <a href="https://t.me/HeliosUK" target="_blank">
+                <img src="Assets/telegram.jpg" alt="Telegram">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61574386582215" target="_blank">
+                <img src="Assets/facebook.png" alt="Facebook">
+            </a>
         </div>
 
         <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
-            © 2026 Helios Heggie Platforms. All rights reserved.  
-            Part of 
-            <a href="https://heggie.netlify.app/" target="_blank" style="color: #4db8ff; text-decoration: none;">
-                Heggie Hub
-            </a>
+            © 2026 Helios Heggie Platforms. All rights reserved.
         </p>
 
         <p style="font-size: 0.9rem; opacity: 0.8;">
-            <a href="#" style="color: #ffffff; text-decoration: none; margin: 0 8px;">Privacy Policy</a> |
-            <a href="#" style="color: #ffffff; text-decoration: none; margin: 0 8px;">Terms of Service</a>
+            <a href="#privacy" style="color: #fff;">Privacy Policy</a> |
+            <a href="#terms" style="color: #fff;">Terms of Service</a>
         </p>
-
     </div>
 </footer>
 
-    
-    <!-- BACK TO TOP BUTTON -->
-    <a href="#" style="position: fixed; bottom: 30px; right: 30px; background: #facc15; color: #000000; border: none; padding: 15px 30px; border-radius: 50px; cursor: pointer; font-weight: bold; transition: transform 0.3s;">
-        ← Back to Top
-    </a>
-    
-    <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+<!-- PRIVACY POLICY -->
+<section class="legal-section" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>We collect only the information you choose to provide, such as your email, name, postcode, or phone number when joining the mailing list. This information is used solely to deliver updates, insights, and platform announcements.</p>
+    <p>We do not sell, trade, or share your data with third parties. Your information is stored securely and can be removed at any time by contacting us at heliosheggie@gmail.com.</p>
+</section>
+
+<!-- TERMS OF SERVICE -->
+<section class="legal-section" id="terms">
+    <h2>Terms of Service</h2>
+    <p>Helios provides informational tools and insights to help UK homeowners understand solar, battery, and energy systems. All information is provided “as‑is” without guarantees of accuracy or financial outcome.</p>
+    <p>By using this website, you agree not to misuse the platform, attempt to access restricted systems, or redistribute content without permission. We may update these terms as the platform evolves.</p>
+</section>
+
+<!-- BACK TO TOP -->
+<a href="#" class="back-to-top" style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #facc15;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: none;
+    text-decoration: none;
+">↑ Top</a>
+
+<script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.getAttribute('href') !== "#") {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-            });
-        });
-        
-        // Back to top button
-        const backToTop = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.style.display = 'block';
-            } else {
-                backToTop.style.display = 'none';
             }
         });
-    </script>
+    });
+
+    // Back to top
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+        backToTop.style.display = window.scrollY > 500 ? 'block' : 'none';
+    });
+</script>
+
 </body>
 </html>

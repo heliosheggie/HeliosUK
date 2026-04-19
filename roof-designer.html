@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roof & Panel Designer - Helios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-text">HELIOS</div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#roadmap">Roadmap</a></li>
+                <li><a href="index.html#mailing">Updates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <img src="Assets/Icons/roof.svg" class="hero-icon" alt="Roof Designer Icon">
+    <h1>Roof & Panel Designer</h1>
+    <p>Visualise your roof and test real panel layouts.</p>
+</section>
+
+<div class="container breadcrumb">
+    <a href="index.html">Home</a> → Roof & Panel Designer
+</div>
+
+<section class="content container">
+    <h2>Features</h2>
+    <ul>
+        <li>Upload or auto‑fetch satellite image</li>
+        <li>Draw roof polygons</li>
+        <li>Auto‑detect pitch & orientation</li>
+        <li>Drag‑and‑drop solar panels</li>
+        <li>Auto‑calculate panel count, wattage, ROI</li>
+    </ul>
+
+    <h2>Tools Used</h2>
+    <ul>
+        <li>Leaflet.js / Mapbox</li>
+        <li>Turf.js</li>
+        <li>Three.js (optional)</li>
+        <li>PVGIS for generation modelling</li>
+    </ul>
+
+    <h2>Example Output</h2>
+    <p>Your roof can fit <strong>18 × 430W panels = 7.74 kW</strong>.</p>
+    <p>Estimated annual output: <strong>7,100 kWh</strong>.</p>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Helios Heggie Platforms</p>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

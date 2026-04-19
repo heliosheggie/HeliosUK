@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solar Intelligence Engine - Helios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-text">HELIOS</div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#roadmap">Roadmap</a></li>
+                <li><a href="index.html#mailing">Updates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <img src="Assets/Icons/solar.svg" class="hero-icon" alt="Solar Intelligence Icon">
+    <h1>Solar Intelligence Engine</h1>
+    <p>Personalised solar potential for your exact property.</p>
+</section>
+
+<div class="container breadcrumb">
+    <a href="index.html">Home</a> → Solar Intelligence Engine
+</div>
+
+<section class="content container">
+    <h2>Purpose</h2>
+    <p>The Solar Intelligence Engine gives homeowners trusted, personalised solar insights using real scientific data.</p>
+
+    <h2>Components</h2>
+    <ul>
+        <li>Historical irradiance</li>
+        <li>7–14 day solar forecast</li>
+        <li>Seasonal yield expectations</li>
+        <li>Cloud cover + temperature impact</li>
+        <li>Shading estimation (optional)</li>
+    </ul>
+
+    <h2>Data Sources</h2>
+    <ul>
+        <li>Open‑Meteo Solar API</li>
+        <li>NASA POWER</li>
+        <li>PVGIS (EU Commission)</li>
+        <li>Met Office (limited free tier)</li>
+    </ul>
+
+    <h2>Example Outputs</h2>
+    <p>Your roof receives <strong>X kWh/m²/day</strong> on average.</p>
+    <p>Expected annual solar generation: <strong>Y kWh</strong>.</p>
+    <p>Best months for solar at your location.</p>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Helios Heggie Platforms</p>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

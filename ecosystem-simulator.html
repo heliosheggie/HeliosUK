@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Ecosystem Savings Simulator - Helios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-text">HELIOS</div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#roadmap">Roadmap</a></li>
+                <li><a href="index.html#mailing">Updates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <img src="Assets/Icons/ecosystem.svg" class="hero-icon" alt="Ecosystem Simulator Icon">
+    <h1>Full Ecosystem Savings Simulator</h1>
+    <p>Solar + Battery + EV + Tariff = Real savings.</p>
+</section>
+
+<div class="container breadcrumb">
+    <a href="index.html">Home</a> → Full Ecosystem Simulator
+</div>
+
+<section class="content container">
+    <h2>Inputs</h2>
+    <ul>
+        <li>Solar generation</li>
+        <li>Battery size</li>
+        <li>EV charging habits</li>
+        <li>Tariff windows</li>
+        <li>Usage profile</li>
+        <li>Export tariff (SEG)</li>
+    </ul>
+
+    <h2>Outputs</h2>
+    <ul>
+        <li>Annual grid import/export</li>
+        <li>Self‑consumption %</li>
+        <li>Savings vs no‑solar</li>
+        <li>Savings vs different tariffs</li>
+        <li>Payback period</li>
+        <li>Best configuration</li>
+    </ul>
+
+    <p>Example:  
+    “With a 5kW system + 10kWh battery + EV charging on Go, your annual bill drops from £1,850 → £420.”</p>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Helios Heggie Platforms</p>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

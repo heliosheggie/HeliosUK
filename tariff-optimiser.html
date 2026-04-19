@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tariff & Supplier Optimiser - Helios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo-text">HELIOS</div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#roadmap">Roadmap</a></li>
+                <li><a href="index.html#mailing">Updates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <img src="Assets/Icons/tariff.svg" class="hero-icon" alt="Tariff Optimiser Icon">
+    <h1>Tariff & Supplier Optimiser</h1>
+    <p>Find the best tariff for your solar + battery setup.</p>
+</section>
+
+<div class="container breadcrumb">
+    <a href="index.html">Home</a> → Tariff & Supplier Optimiser
+</div>
+
+<section class="content container">
+    <h2>Tariffs Included</h2>
+    <ul>
+        <li>Octopus Agile</li>
+        <li>Octopus Go</li>
+        <li>Octopus Cosy</li>
+        <li>Intelligent Octopus</li>
+        <li>Economy 7</li>
+        <li>Standard variable</li>
+        <li>EV‑specific tariffs</li>
+    </ul>
+
+    <h2>Outputs</h2>
+    <ul>
+        <li>Peak/cheap windows</li>
+        <li>Battery charging opportunities</li>
+        <li>Estimated annual savings</li>
+        <li>Referral integration</li>
+    </ul>
+
+    <p>Example:  
+    “Based on your usage + battery, Octopus Go saves you £X/year.”</p>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Helios Heggie Platforms</p>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
