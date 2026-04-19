@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helios - Your transparent, validated AI energy intelligence for UK homeowners. Solar panels, batteries, EV chargers with expert advice.">
+    <meta name="keywords" content="solar energy, battery storage, electric vehicle, solar panels, energy saving, UK homeowners">
+    <meta name="author" content="Helios CEO Platform">
+    <title>Helios CEO Platform - Your Transparent Energy Intelligence</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
+            color: #ffffff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #facc15;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #facc15;
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #0d0d0d 50%, #000000 100%);
+            color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn-primary {
+            background: #facc15;
+            color: #000000;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(250, 204, 21, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+        
+        .btn-secondary:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+        
+        /* FEATURES */
+        .features {
+            background: #ffffff;
+            padding: 80px 0;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #000000;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            padding: 40px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-card h3 {
+            color: #000000;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* ABOUT SECTION */
+        .about {
+            background: #f0f0f0;
+            padding: 80px 0;
+        }
+        
+        .about h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #000000;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-image {
+            background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+        
+        /* GET STARTED */
+        .get-started {
+            background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .get-started h2 {
+            color: #000000;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: #000000;
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .social-links {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">HELIOS</a>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#get-started">Get Started</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Transparent Energy Intelligence</h1>
+            <p>Expert advice on solar panels, batteries, EV chargers with unbiased, AI-driven insights.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Start Your Energy Assessment</a>
+                <a href="#features" class="btn btn-secondary">View Features</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose Helios?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📊 Solar Intelligence</h3>
+                    <p>AI-powered analysis of your home's solar potential with accurate forecasts and detailed generation estimates.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💰 Grant Calculator</h3>
+                    <p>Comprehensive calculations for UK government grants including ECO4, Home Energy Scotland, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Tariff Optimizer</h3>
+                    <p>Expert comparison of energy tariffs with savings estimates and smart battery recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🏠 Complete System Guide</h3>
+                    <p>From installation to maintenance - a step-by-step roadmap to maximizing your energy savings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Helios CEO Platform</h2>
+            <div class="about-content">
+                <div>
+                    <h3>Who We Are</h3>
+                    <p>Built by Helios CEO Agent with the mission to provide trustworthy, unbiased energy intelligence for UK homeowners.</p>
+                    <br>
+                    <p><strong>Our Core Principles:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 15px;">
+                        <li>Unbiased intelligence only - no selling, no commissions</li>
+                        <li>Truth over convenience - always investigate first</li>
+                        <li>Expertise in solar, battery, and EV energy systems</li>
+                        <li>Transparency and education for homeowners</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <!-- Placeholder for image - remove for empty -->
+                    <div style="text-align: center;">
+                        <h3 style="font-size: 3rem;">🏠</h3>
+                        <p>Home Energy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- GET STARTED SECTION -->
+    <section class="get-started" id="get-started">
+        <div class="container">
+            <h2>Get Started Today</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Your energy audit is just a few clicks away</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Book Free Energy Assessment</a>
+                <a href="#features" class="btn btn-secondary">Explore Helios</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <h3>Helios CEO Platform</h3>
+            <p>Your trusted source for UK home energy intelligence</p>
+            <div class="social-links">
+                <a href="#">Email Us</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+            <p style="margin-top: 30px; font-size: 0.9rem; color: #ffffff;">
+                © 2026 Helios CEO Platform. All rights reserved.<br>
+                <a href="#" style="color: #ffffff;">Privacy Policy</a> | 
+                <a href="#" style="color: #ffffff;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+    
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" style="position: fixed; bottom: 30px; right: 30px; background: #facc15; color: #000000; border: none; padding: 15px 30px; border-radius: 50px; cursor: pointer; font-weight: bold; transition: transform 0.3s;">
+        ← Back to Top
+    </a>
+    
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Back to top button
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
