@@ -1,0 +1,27 @@
+import { motion } from 'motion/react';
+
+export default function TermsOfService() {
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-12">
+      <h1 className="text-4xl font-display font-bold mb-8">Terms of Service</h1>
+      <div className="glass p-8 rounded-3xl prose prose-slate dark:prose-invert max-w-none">
+        <p className="text-brand-grey mb-4">Last Updated: May 2024</p>
+        
+        <h2 className="text-2xl font-bold mt-8 mb-4">1. Acceptance of Terms</h2>
+        <p>By accessing or using Helios UK, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the platform.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">2. Use of Information</h2>
+        <p>The data provided by Helios UK (estimates, calculations, ROI metrics) are for informational purposes only. They are not financial or engineering guarantees. We recommend consulting a qualified professional before making investment decisions.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">3. Prohibited Conduct</h2>
+        <p>Users may not attempt to reverse engineer the platform or use it for any illegal activities within the United Kingdom.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">4. Limitation of Liability</h2>
+        <p>Helios UK is provided "as is" without any warranties. We are not liable for any direct or indirect damages resulting from the use of our calculations or referral tools.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">5. Governing Law</h2>
+        <p>These terms are governed by the laws of Scotland and the United Kingdom.</p>
+      </div>
+    </div>
+  );
+}

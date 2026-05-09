@@ -1,0 +1,31 @@
+import { motion } from 'motion/react';
+
+export default function PrivacyPolicy() {
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-12">
+      <h1 className="text-4xl font-display font-bold mb-8">Privacy Policy</h1>
+      <div className="glass p-8 rounded-3xl prose prose-slate dark:prose-invert max-w-none">
+        <p className="text-brand-grey mb-4">Last Updated: May 2024</p>
+        
+        <h2 className="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
+        <p>Helios UK ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our platform.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">2. Data We Collect</h2>
+        <p>We do not store personal identification information unless you explicitly provide it. We collect technical data like your IP address (anonymized) to provide location-based services and improve our platform metrics.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">3. How We Use Data</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>To provide solar potential estimates based on your geographic region.</li>
+          <li>To analyze platform usage and improve our tools.</li>
+          <li>To facilitate donations or referral bonuses (e.g., Octopus Energy).</li>
+        </ul>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">4. Third-Party Services</h2>
+        <p>We use external APIs such as Open-Meteo for weather data and Leaflet for maps. These services may collect information as per their own privacy policies.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">5. Contact Us</h2>
+        <p>If you have questions about this policy, contact us at heliosheggie@gmail.com.</p>
+      </div>
+    </div>
+  );
+}

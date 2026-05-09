@@ -1,12 +1,10 @@
-# HeliosUK - Workspace Root
-# Purpose: Central repository for Helios digital business ecosystem assets, documentation, and agent coordination.
-
-## Structure
-- /strategy: Roadmaps, Business Blueprints, Vision docs.
-- /org: Hierarchy, Agent definitions, Roles, Responsibilities.
-- /tasks: Task logs, Status, Dependencies, Risks.
-- /assets: Media, Brand assets, Templates.
-- /infrastructure: Deployment configs, API keys (encrypted/secured), GitHub/Netlify/Telegram references.
-- /research: Validated data, Technical verifications, Market analysis.
-- /content: Published articles, Social media drafts, Web content.
-- /memory: Daily logs and Long-term strategy notes.
+{
+  "projectId": "gen-lang-client-0995975669",
+  "appId": "1:147243506402:web:e53493ba480e02109c1cbb",
+  "apiKey": "AIzaSyD1e8XMlTI122RgwnzfqmY7dXfxOTU3h1E",
+  "authDomain": "gen-lang-client-0995975669.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-d935d319-e19c-45f7-93a0-8ec176d125c6",
+  "storageBucket": "gen-lang-client-0995975669.firebasestorage.app",
+  "messagingSenderId": "147243506402",
+  "measurementId": ""
+}
